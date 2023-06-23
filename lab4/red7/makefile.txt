@@ -1,0 +1,14 @@
+red7: main.o Hand.o Card.o Card_v2.o 
+    g++ -o red7 main.o Hand.o Card.o Card_v2.o
+
+main.o: main.cpp Hand.h Card.h Card_v2.h
+    g++ -c main.cpp
+
+Hand.o: Hand.cpp Hand.h
+    g++ -c Hand.cpp
+
+Card.o: Card.cpp Card.h 
+    g++ -c Card.cpp
+
+Card_v2.o: Card_v2.cpp Card_v2.h
+    g++ -c Card_v2.cpp
